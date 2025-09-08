@@ -12,12 +12,6 @@
     object-fit: cover;
 }
 
-/* BOTONES DE PÁGINAS */
-.fotoBot {
-    background-color: #9c494a;
-    color: white;
-}
-
 /* LOGO TEXTO */
 .logo {
     color: whitesmoke;
@@ -31,7 +25,7 @@
     align-items: center;
     gap: 10px;
     padding: 8px;
-    background-color: #e3c2bd;
+    background-color: #dbdb87;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -45,7 +39,7 @@ a {
 
 /* TEXTOS */
 h5, h6 {
-    color: #6f3032;
+    color: #752629;
 }
 
 /* ESTRUCTURA GENERAL */
@@ -53,7 +47,7 @@ body {
     display: grid;
     height: 100vh;
     justify-content: center;
-    background-color: #e3c2bd;
+    background-color: #dbdb87;
 }
 
 /* NAV CON MÁS DETALLE */
@@ -62,7 +56,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #9c494a 0%, #6f3032 100%);
+    background: linear-gradient(180deg, #c5a438 0%, #b36b28 100%);
     padding: 20px 0;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -107,7 +101,7 @@ aside {
     grid-area: aside;
     text-align: center;
     justify-content: center;
-    background-color: #e3c2bd;
+    background-color: #dbdb87;
     padding-bottom: 5px;
     width: 100%;
     height: 40%;
@@ -124,35 +118,26 @@ main {
 /* FOOTER */
 footer {
     grid-area: footer;
-    background-color: #6f3032;
-    color: white;
+    background-color: #b36b28;
+    color: rgb(224, 224, 224);
     padding-top: 10px;
     text-align: center;
-}
-
-/* BOTONES */
-button {
-    background-color: #6f3032;
-    border-radius: 5%;
-    padding: 5px;
-    width: 60%;
-    align-items: center;
-    margin-bottom: 15px;
 }
 
 /* TARJETAS */
 .card {
     width: 250px;
-    height: 380px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-style: solid;
     border-radius: 8px;
-    background-color: #e1e2e1;
+    background-color: #f1be2f;
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    justify-content: space-between;
 }
 
 /* TARJETAS DE TIPO */
@@ -171,13 +156,13 @@ button {
     justify-content: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: #e3c2bd;
+    background-color: #000000;
 }
 
 /* EFECTO ZOOM EN .CAJA */
 .caja {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -189,7 +174,7 @@ button {
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
-    background-color: white;
+    background-color: rgb(216, 193, 61);
 }
 
 .caja:hover .imagen {
@@ -199,13 +184,31 @@ button {
 /* ZOOM PARA OTRAS IMÁGENES */
 .card img.card-img-top {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: contain;
     transition: transform 0.3s ease;
     background-color: white;
 }
 
 .card:hover img.card-img-top {
+    transform: scale(1.05);
+}
+
+/* BOTÓN COMPRAR */
+.boton-comprar {
+    background: linear-gradient(180deg, #c5a438 0%, #b36b28 100%);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.boton-comprar:hover {
+    background: linear-gradient(180deg, #a07d2c 0%, #83461b 100%);
     transform: scale(1.05);
 }
 
@@ -237,7 +240,7 @@ button {
 
     .menu {
         position: absolute;
-        background-color: #e3c2bd;
+        background-color: #ff1100;
         border: 1px solid #ccc;
         margin-top: 30%;
         display: none;
